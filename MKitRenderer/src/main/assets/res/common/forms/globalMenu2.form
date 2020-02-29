@@ -1,0 +1,140 @@
+form globalMenu
+{
+    ${font} = res/common/fonts/NanumGothic-48.gpb
+    ${fontSize} = 16
+    ${textColor} = #ffffffff
+    ${textAlignment} = ALIGN_VCENTER_HCENTER
+
+    layout = LAYOUT_ABSOLUTE
+    size = 275, 275
+
+    image mainbg
+    {
+        path = res/png/square_a60.png
+        size = 100%, 100%
+        position = 0, 0
+    }
+
+    container container1
+	{
+		size = 100, 100
+		position = 25, 25
+		image bg1
+		{
+		    path = res/hdpi-png/rectangle_1.png
+		    size = 100, 100
+            position = 0, 0
+		}
+		image image1
+        {
+            path = res/hdpi-png/webcam.png
+            size = 52, 61
+            position = 24, 9
+        }
+    }
+
+    container container2
+    {
+        size = 100, 100
+        position = 150, 25
+        image bg2
+        {
+            path = res/hdpi-png/rectangle_1.png
+            size = 100, 100
+            position = 0, 0
+        }
+        image image2
+        {
+            path = res/hdpi-png/history.png
+            size = 61, 55
+            position = 19, 15
+        }
+    }
+
+    container container3
+    {
+        size = 100, 100
+        position = 25, 150
+        image bg3
+        {
+            path = res/hdpi-png/rectangle_1.png
+            size = 100, 100
+            position = 0, 0
+        }
+        image image3
+        {
+            path = res/hdpi-png/edit.png
+            size = 55, 57
+            position = 22, 13
+        }
+    }
+    container container4
+    {
+        size = 100, 100
+        position = 150, 150
+        image bg4
+        {
+            path = res/hdpi-png/rectangle_1.png
+            size = 100, 100
+            position = 0, 0
+        }
+        image image4
+        {
+            path = res/hdpi-png/location.png
+            size = 41, 60
+            position = 29, 10
+        }
+    }
+
+    container text1
+    {
+        size = 225, 20
+        position = 25, 100
+        label label1
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 0, 0
+            size = 100, 20
+            text = AR통화
+        }
+        label label2
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 125, 0
+            size = 100, 20
+            text = AR통화이력
+        }
+    }
+
+    container text2
+    {
+        size = 225, 20
+        position = 25, 225
+        label label3
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 0, 0
+            size = 100, 20
+            text = 작업
+        }
+        label label4
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 125, 0
+            size = 100, 20
+            text = ZONE변경
+        }
+    }
+}

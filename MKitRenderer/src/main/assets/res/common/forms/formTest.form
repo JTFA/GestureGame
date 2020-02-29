@@ -1,0 +1,8 @@
+form basicControls
+{
+    layout = LAYOUT_ABSOLUTE
+    size = 1
+    batchingEnabled = false
+
+
+}

@@ -1,0 +1,75 @@
+form childImgTxtLayout
+{
+	theme = res/ui/default2.theme
+	alignment = ALIGN_LEFT
+	layout = LAYOUT_FLOW
+	size = 670, 560
+
+	container cover
+	{
+		layout = LAYOUT_ABSOLUTE
+		size = 650, 540
+		alignment = ALIGN_VCENTER
+
+		container container
+		{
+			style = Panel
+			layout = LAYOUT_VERTICAL
+			alignment = ALIGN_VCENTER
+			size = 650, 540
+
+			image iconImage
+			{
+				alignment = ALIGN_HCENTER
+				path = res/png/logo.png
+				size = 200, 180
+				margin
+				{
+                	left = 0
+                	right = 0
+                	top = 15
+                	bottom = 0
+            	}
+       		}
+
+			image textImage
+			{
+				alignment = ALIGN_LEFT
+                      				path = res/png/logo.png
+                      				size = 660, 200
+                      				margin
+            	{
+                	left = 3
+                	right = 0
+                	top = 13
+                	bottom = 0
+            	}
+			}
+
+			container horizonContatiner
+			{
+				layout = LAYOUT_FLOW
+				alignment = ALIGN_LEFT
+				size = 650, 90
+				margin
+            	{
+					left = 3
+				   	right = 0
+			       	top = 3
+		           	bottom = 0
+	            }
+
+				image fixTextImage
+				{
+					path = res/png/logo.png
+					size = 100, 80
+				}
+
+				checkbox checkBox
+				{
+					size = 80, 80
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+form layout2
+{
+    theme = res/ui/default1.theme
+    layout = LAYOUT_VERTICAL
+    size = 440,250
+
+	container container1
+	{
+		layout = LAYOUT_ABSOLUTE
+		alignment = ALIGN_TOP
+		size = 420, 90
+		margin
+		{
+			bottom = 10
+		}
+
+		checkbox checkBox
+		{
+			alignment = ALIGN_LEFT
+			position = 0, 15
+			size = 40, 40
+		}
+
+		image imageTitle
+		{
+	        alignment = ALIGN_HCENTER
+			position = 0, 10
+			path = res/png/title.png
+			size = 200, 50
+		}
+
+		button button
+		{
+	        alignment = ALIGN_RIGHT
+			position = 0, 10
+			size = 50, 50
+		}
+
+		image imageLine
+        {
+        	size = 400, 2
+        	path = res/png/brick.png
+        	position = 0, 65
+        }
+	}
+
+	container container
+	{
+	    enabled = false
+		layout = LAYOUT_FLOW
+		alignment = ALIGN_BOTTOM
+		size = 420, 150
+
+		image image1
+		{
+			path = res/png/bobo.png
+			size = 150, 150
+		}
+
+		image image2
+		{
+			alignment = ALIGN_RIGHT
+			path = res/png/bobo.png
+			size = 240, 150
+		}
+	}
+}

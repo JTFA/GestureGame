@@ -1,0 +1,18 @@
+form mainHeaderLayout
+{
+    layout = LAYOUT_FLOW
+    size = 1000, 100
+
+	container cover {
+        layout = LAYOUT_ABSOLUTE
+        alignment = ALIGN_VCENTER_HCENTER
+        size = 1000, 100
+
+        image image
+        {
+            alignment = ALIGN_VCENTER_HCENTER
+            size = 1000, 100
+            position = 0, 0
+        }
+    }
+}

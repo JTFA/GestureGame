@@ -1,0 +1,33 @@
+form TargetOn
+{
+    ${font} = res/common/fonts/NanumGothic-48.gpb
+    ${fontSize} = 24
+    ${textColor} = #ffffffff
+    ${textAlignment} = ALIGN_VCENTER_HCENTER
+
+    layout = LAYOUT_ABSOLUTE
+    size = 200, 155
+
+    container container1
+	{
+		size = 200, 120
+		position = 0, 25
+		image targetImage
+		{
+		    path = res/hdpi-png/target_on.png
+		    size = 72, 72
+            position = 64, 0
+		}
+
+		label guideLabel
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 0, 80
+            size = 200, 50
+            text = 설비를 바라보세요.
+        }
+    }
+}

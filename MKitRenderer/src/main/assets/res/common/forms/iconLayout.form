@@ -1,0 +1,19 @@
+form iconLayout
+{
+    theme = res/ui/default2.theme
+    layout = LAYOUT_VERTICAL
+    size = 500, 500
+
+	container container
+	{
+		layout = LAYOUT_FLOW
+		alignment = ALIGN_VCENTER_HCENTER
+		size = 500, 500
+
+		image image
+		{
+			path = res/png/bobo.png
+			size = 500, 500
+		}
+	}
+}

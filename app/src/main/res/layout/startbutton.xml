@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kt.library.opengl.view.GLRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/startbutton"
+    android:layout_width="1080px"
+    android:layout_height="1920px"
+    android:background="@android:color/transparent">
+
+    <!--
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:text="312"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        />
+     -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:text="Start Game"
+        android:textSize="100dp"
+        android:textColor="@android:color/black" />
+
+</com.kt.library.opengl.view.GLRelativeLayout>

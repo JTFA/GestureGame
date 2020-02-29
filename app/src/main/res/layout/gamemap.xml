@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kt.library.opengl.view.GLRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gamemap"
+    android:layout_width="1080px"
+    android:layout_height="1920px"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/gamemapiv"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gamemap" />
+
+</com.kt.library.opengl.view.GLRelativeLayout>

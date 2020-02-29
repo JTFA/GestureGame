@@ -1,0 +1,23 @@
+form ToastLayout
+{
+    theme = res/ui/default.theme
+    layout = LAYOUT_ABSOLUTE
+    size = 800, 50
+
+    ${font} = res/common/fonts/NanumGothic-48.gpb
+    ${fontSize} = 24
+    ${textColor} = #ffffffff
+    ${textAlignment} = ALIGN_VCENTER_HCENTER
+
+    label msgLabel
+    {
+        font = ${font}
+        fontSize = ${fontSize}
+        textColor = ${textColor}
+        textAlignment = ${textAlignment}
+        position = 10, 0
+        size = 100%, 100%
+        autoSize = AUTO_SIZE_WIDTH
+        text =
+    }
+}

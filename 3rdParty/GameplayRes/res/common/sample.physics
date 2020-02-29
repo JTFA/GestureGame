@@ -1,0 +1,23 @@
+collisionObject staticMesh
+{
+    type = RIGID_BODY
+    shape = MESH
+    mass = 0.0
+    friction = 0.5
+    restitution = 0.75
+    linearDamping = 0.025
+    angularDamping = 0.16
+}
+
+collisionObject boy
+{
+    type = CHARACTER
+    shape = CAPSULE  
+    radius = 1.2
+    height = 6.0
+    center = 0, 3.0, 0
+    centerAbsolute = true
+    mass = 20.0
+    maxStepHeight = 0
+    maxSlopeAngle = 0
+}

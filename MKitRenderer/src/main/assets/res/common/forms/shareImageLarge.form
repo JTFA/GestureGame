@@ -1,0 +1,19 @@
+form imageLayout
+{
+    layout = LAYOUT_FLOW
+    size = 420, 420
+
+	container cover {
+    		layout = LAYOUT_ABSOLUTE
+    		alignment = ALIGN_VCENTER_HCENTER
+    		size = 420, 420
+
+    		image image
+            {
+                alignment = ALIGN_VCENTER_HCENTER
+				path = res/png/title.png
+				size = 400, 400
+				position = 10, 10
+            }
+    }
+}

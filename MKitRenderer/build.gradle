@@ -1,0 +1,98 @@
+apply plugin: 'com.android.library'
+
+def MAXSTAR_SDK_DIR = '../3rdParty/MaxstAR/lib'
+def GAME_PLAY_RES_DIR ="../3rdParty/GameplayRes"
+def KT_LIBRARY_DIR = '../3rdParty/KT-Library'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 26
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_ARM_MODE=arm",
+                        "-DANDROID_CPP_FEATURES=rtti exceptions",
+                        "-DANDROID_STL=c++_static",
+                        "-DANDROID_TOOLCHAIN=clang",
+                        "NDK_DEBUG=1"
+                cppFlags "-std=c++11 -fexceptions -frtti -DMAXST_CUSTOMIZE -DKT_CUSTOMIZE"
+            }
+        }
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api files("$MAXSTAR_SDK_DIR/VideoPlayer.jar")
+    api files("$MAXSTAR_SDK_DIR/MaxstAR.jar")
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation files("$KT_LIBRARY_DIR/external-render-release.aar")
+}
+
+//task copyAssetFiles(type: Copy) {
+//    println "$module.name Copy Asset files"
+//    copy {
+//        from "$GAME_PLAY_RES_DIR/res/design"
+//        into 'src/main/assets/res/png'
+//    }
+//    copy {
+//        from "$GAME_PLAY_RES_DIR"
+//        into 'src/main/assets'
+//        include 'game.png.config'
+//        rename('game.png.config', 'game.config')
+//    }
+//    copy {
+//        from "$GAME_PLAY_RES_DIR/../../res"
+//        into 'src/main/assets/res'
+//        include 'logo_powered_white.png'
+//    }
+//    copy {
+//        from "$GAME_PLAY_RES_DIR/res/common"
+//        into 'src/main/assets/res/common'
+//    }
+//    copy {
+//        from "$GAME_PLAY_RES_DIR/res/shaders"
+//        into 'src/main/assets/res/shaders'
+//    }
+//    copy {
+//        from "$GAME_PLAY_RES_DIR/res/ui"
+//        into 'src/main/assets/res/ui'
+//    }
+//}
+
+//gradle.projectsEvaluated {
+//    preBuild.dependsOn(copyAssetFiles)
+//}

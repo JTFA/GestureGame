@@ -1,0 +1,190 @@
+form contentsTemplate
+{
+    ${font} = res/common/fonts/NanumGothic-48.gpb
+    ${fontSize} = 64
+    ${textColor} = #ffffffff
+    ${textAlignment} = ALIGN_VCENTER
+
+    layout = LAYOUT_ABSOLUTE
+    size = 1000, 1000
+    position = 0, 0
+
+    container bgContainer
+    {
+        size = 1000, 1000
+        position = 0, 0
+        image topBG
+        {
+            path = res/png/square_a60.png
+            size = 1000, 200
+            position = 0, 0
+        }
+
+        image bottomBG
+        {
+            path = res/png/square_a60.png
+            size = 1000, 140
+            position = 0, 860
+        }
+
+        image leftBG
+        {
+            path = res/png/square_a60.png
+            size = 300, 660
+            position = 0, 200
+        }
+
+        image rightBG
+        {
+            path = res/png/square_a60.png
+            size = 40, 660
+            position = 960, 200
+        }
+    }
+
+    container itemContainer
+	{
+	    layout = LAYOUT_ABSOLUTE
+		size = 280, 660
+		position = 10, 200
+		image bg1
+        {
+            path = res/hdpi-png/label_bg.png
+            position = 10, 10
+            size = 280, 150
+        }
+
+        image bg2
+        {
+            path = res/hdpi-png/label_bg.png
+            position = 10, 170
+            size = 280, 150
+        }
+
+        image bg3
+        {
+            path = res/hdpi-png/label_bg.png
+            position = 10, 330
+            size = 280, 150
+        }
+
+        image bg4
+        {
+            path = res/hdpi-png/label_bg.png
+            position = 10, 500
+            size = 280, 150
+        }
+
+		label label1
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 30, 10
+            size = 280, 150
+            text = 수리 설명서
+        }
+
+        label label2
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 30, 170
+            size = 280, 150
+            text = 가스터빈 가이드
+        }
+
+        label label3
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 30, 330
+            size = 280, 150
+            text = 터빈 도면
+        }
+
+        label label4
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 30, 500
+            size = 280, 150
+            text = 가스터빈 동영상
+        }
+    }
+
+    container topCtrlContainer
+    {
+        layout = LAYOUT_ABSOLUTE
+        size = 1000, 200
+        position = 0, 0
+
+        label titleLabel
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 30, 0
+            size = 1000, 100
+            text = 타이틀
+        }
+
+        image imagePlay
+        {
+            path = res/hdpi-png/play_btn.png
+            size = 60, 60
+            position = 900, 120
+        }
+
+        image imagePause
+        {
+            path = res/hdpi-png/pause_btn.png
+            size = 60, 60
+            position = 800, 120
+        }
+    }
+
+    container bottomCtrlContainer
+    {
+        layout = LAYOUT_ABSOLUTE
+        size = 1000, 140
+        position = 0, 860
+
+        image imageNext
+        {
+            path = res/hdpi-png/next_btn.png
+            size = 60, 60
+            position = 700, 20
+        }
+
+        image imagePrev
+        {
+            path = res/hdpi-png/prev_btn.png
+            size = 60, 60
+            position = 550, 20
+        }
+    }
+
+    container contentsContainer
+    {
+        layout = LAYOUT_ABSOLUTE
+        size = 660, 660
+        position = 300, 200
+
+        image bg2
+        {
+            path = res/hdpi-png/rectangle_1.png
+            size = 660, 660
+            position = 0, 0
+            opacity = 0
+        }
+    }
+}

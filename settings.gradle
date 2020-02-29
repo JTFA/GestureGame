@@ -1,0 +1,2 @@
+include ':app', ':MKitRenderer'
+rootProject.name='MediaPipeMultiHandsTrackingApp'

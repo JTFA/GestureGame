@@ -1,0 +1,28 @@
+form layout3
+{
+	theme = res/ui/default2.theme
+    layout = LAYOUT_ABSOLUTE
+    size = 400,240
+
+	image textImage
+    {
+    	size = 400, 50
+    	path = res/png/back.png
+    	position = 0, 0
+    }
+
+	image lineImage
+    {
+    	size = 5, 100
+    	path = res/png/back.png
+    	position = 200, 50
+    }
+
+	image circleImage
+	{
+		position = 186, 130
+		path = res/png/circle.png
+		size = 30, 30
+		selected = false
+	}
+}

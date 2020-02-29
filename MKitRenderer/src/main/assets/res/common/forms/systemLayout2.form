@@ -1,0 +1,18 @@
+form systemLayout2
+{
+    layout = LAYOUT_FLOW
+    size = 100, 100
+
+	container cover {
+        layout = LAYOUT_ABSOLUTE
+        alignment = ALIGN_VCENTER_HCENTER
+        size = 100, 100
+
+        image image
+        {
+            alignment = ALIGN_VCENTER_HCENTER
+            size = 100, 100
+            position = 0, 0
+        }
+    }
+}

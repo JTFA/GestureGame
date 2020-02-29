@@ -1,0 +1,66 @@
+form tagLayout
+{
+	theme = res/ui/default2.theme
+    alignment = ALIGN_LEFT
+    layout = LAYOUT_ABSOLUTE
+    size = 530, 290
+
+    image image1
+    {
+    	alignment = ALIGN_HCENTER
+    	path = res/png/pointBlue.png
+    	size = 60, 60
+    	position = 0, 0
+    }
+
+   	image image2
+   	{
+   		alignment = ALIGN_HCENTER
+   		path = res/png/lineBlue.png
+   		size = 15, 80
+   		position = 0, 60
+   	}
+
+   	container cover
+   	{
+   		layout = LAYOUT_ABSOLUTE
+   		size = 500, 130
+   		position = 0, 140
+
+   		container container
+   		{
+   			style = TagPanel
+   			layout = LAYOUT_FLOW
+   			alignment = ALIGN_VCENTER
+   			size = 500, 230
+   			position = 0, 0
+
+   			image image
+   			{
+   				alignment = ALIGN_VCENTER
+   				path = res/png/logo.png
+   				size = 150, 120
+   				margin
+                {
+					left = 20
+                   	right = 0
+                    top = 0
+                    bottom = 0
+    			}
+    		}
+
+    		button tagButton
+    		{
+    			alignment = ALIGN_VCENTER_RIGHT
+    			size = 80, 80
+    			margin
+    			{
+    				left = 0
+    				right = -5
+    				top = 7
+    				bottom = 0
+           		}
+    		}
+    	}
+    }
+}

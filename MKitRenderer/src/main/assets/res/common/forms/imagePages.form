@@ -1,0 +1,72 @@
+form imagePages
+{
+	${font} = res/common/fonts/NanumGothic-48.gpb
+    ${fontSize} = 64
+    ${textColor} = #ffffffff
+    ${textAlignment} = ALIGN_VCENTER_HCENTER
+	
+	layout = LAYOUT_ABSOLUTE
+    size = 500, 1000	
+	position = 0, 0
+
+	image mainbg
+    {
+        path = res/png/square_a60.png
+        size = 100%, 100%
+        position = 0, 0
+    }
+	
+	container cover {
+    		layout = LAYOUT_ABSOLUTE
+    		size = 500, 500
+			position = 0, 0
+
+    		image page
+            {
+				path = res/hdpi-png/rectangle_1.png
+				size = 500, 500
+				position = 0, 0
+            }
+    }
+	
+	container bottom1
+	{
+	    size = 100, 100
+		position = 0, 500
+		
+		image bg3
+		{
+		    path = res/hdpi-png/rectangle_1.png
+		    size = 100, 100
+            position = 0, 0
+		}
+		
+		image btn_up
+        {
+            path = res/png/btn_up.png
+            size = 90, 61
+            position = 5, 20
+        }		
+	}
+	
+	container bottom2
+	{
+	    size = 100, 100
+		position = 110, 500
+		
+		image bg4
+		{
+		    path = res/hdpi-png/rectangle_1.png
+		    size = 100, 100
+            position = 0, 0
+		}
+		
+		image btn_down
+        {
+            path = res/png/btn_down.png
+            size = 90, 61
+            position = 5, 20
+        }
+		
+	}
+	

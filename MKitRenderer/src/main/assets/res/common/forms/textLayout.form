@@ -1,0 +1,21 @@
+form textLayout
+{
+    theme = res/ui/default2.theme
+    layout = LAYOUT_FLOW
+    size = 150, 50
+
+	container cover {
+    		style = TextBoxPanel
+    		layout = LAYOUT_ABSOLUTE
+    		alignment = ALIGN_VCENTER_HCENTER
+    		size = 150, 50
+
+    		image image
+    		{
+    			alignment = ALIGN_VCENTER_HCENTER
+    			path = res/png/title.png
+    			size = 100, 32
+    			position = 0, 0
+    		}
+    }
+}

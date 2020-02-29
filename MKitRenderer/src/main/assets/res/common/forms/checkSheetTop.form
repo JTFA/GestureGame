@@ -1,0 +1,52 @@
+form checkSheetTop
+{
+	theme = res/ui/default2.theme
+	alignment = ALIGN_LEFT
+	layout = LAYOUT_ABSOLUTE
+	size = 530, 300
+
+	image image1
+	{
+		alignment = ALIGN_HCENTER
+		path = res/png/pointyellow.png
+		size = 60, 60
+		position = 0, 0
+	}
+
+	image image2
+	{
+		alignment = ALIGN_HCENTER
+		path = res/png/lineyellow.png
+		size = 15, 80
+		position = 0, 60
+	}
+
+	container container
+	{
+		style = Panel
+		layout = LAYOUT_ABSOLUTE
+		size = 520, 140
+		position = 0, 140
+
+		image image
+    	{
+    		alignment = ALIGN_VCENTER
+    		path = res/png/logo.png
+    		position = 5 , 0
+    		size = 100, 120
+    	}
+
+    	button checkButton
+    	{
+    		alignment = ALIGN_VCENTER_RIGHT
+    		size = 80, 80
+    		margin
+    		{
+    			left = 0
+    			right = -5
+    			top = 7
+    			bottom = 0
+    		}
+    	}
+    }
+}

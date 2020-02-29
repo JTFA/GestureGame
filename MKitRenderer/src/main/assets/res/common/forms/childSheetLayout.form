@@ -1,0 +1,58 @@
+form childSheetLayout
+{
+	theme = res/ui/default2.theme
+	alignment = ALIGN_LEFT
+	layout = LAYOUT_FLOW
+	size = 720, 130
+
+	image image1
+	{
+		alignment = ALIGN_VCENTER
+		path = res/png/pointyellow.png
+		size = 50, 50
+	}
+
+	image image2
+	{
+		alignment = ALIGN_VCENTER
+		path = res/png/lineyellow.png
+		size = 40, 15
+	}
+
+	container container
+	{
+		style = Panel
+		layout = LAYOUT_ABSOLUTE
+		alignment = ALIGN_VCENTER
+		size = 520, 140
+		position = 0, 0
+
+		checkbox childCheckBox
+		{
+			alignment = ALIGN_VCENTER
+			position = 5, 0
+			size = 80, 80
+		}
+
+		image image
+		{
+			alignment = ALIGN_VCENTER
+			path = res/png/logo.png
+			position = 110 , 0
+			size = 100, 120
+		}
+
+		button childCheckButton
+		{
+			alignment = ALIGN_VCENTER_RIGHT
+			size = 80, 80
+			margin
+			{
+				left = 0
+				right = -5
+				top = 7
+				bottom = 0
+			}
+		}
+	}
+}

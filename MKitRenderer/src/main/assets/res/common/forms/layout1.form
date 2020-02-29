@@ -1,0 +1,24 @@
+form layout1
+{
+    layout = LAYOUT_FLOW
+    size = 400, 80
+
+    checkbox checkBox
+    {
+		alignment = ALIGN_VCENTER
+        position = 0, 0
+    }
+
+    image image
+    {
+        alignment = ALIGN_VCENTER
+        path = res/png/logo.png
+		size = 200, 50
+    }
+
+    button button
+    {
+        alignment = ALIGN_VCENTER_RIGHT
+		size = 50, 50
+    }
+}

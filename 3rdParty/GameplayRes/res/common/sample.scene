@@ -1,0 +1,19 @@
+scene
+{
+    path = res/common/sample.gpb
+
+    node boymesh
+    {
+        material = res/common/sample.material#boy
+        tags
+        {
+            dynamic
+        }
+    }
+
+    physics
+    {
+        // TODO: Fixme Gravity is set to 3x normal gravity to compenate for larger scale of scene. Bug
+        gravity = 0.0, -29.4, 0.0
+    }
+}

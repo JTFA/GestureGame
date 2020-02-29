@@ -1,0 +1,154 @@
+form globalMenu
+{
+    ${font} = res/common/fonts/NanumGothic-48.gpb
+    ${fontSize} = 16
+    ${textColor} = #ffffffff
+    ${textAlignment} = ALIGN_VCENTER_HCENTER
+
+    layout = LAYOUT_ABSOLUTE
+    size = 550, 115
+
+    container container1
+	{
+		size = 100, 100
+		position = 25, 15
+		image bg1
+		{
+		    path = res/hdpi-png/rectangle_1.png
+		    size = 100, 100
+            position = 0, 0
+		}
+		image image1
+        {
+            path = res/hdpi-png/webcam.png
+            size = 52, 61
+            position = 24, 9
+        }
+    }
+
+    container container2
+    {
+        size = 100, 100
+        position = 150, 15
+        image bg2
+        {
+            path = res/hdpi-png/rectangle_1.png
+            size = 100, 100
+            position = 0, 0
+        }
+        image image2
+        {
+            path = res/hdpi-png/history.png
+            size = 61, 55
+            position = 19, 15
+        }
+    }
+
+    container container3
+    {
+        size = 100, 100
+        position = 275, 15
+        image bg3
+        {
+            path = res/hdpi-png/rectangle_1.png
+            size = 100, 100
+            position = 0, 0
+        }
+        image image3
+        {
+            path = res/hdpi-png/edit.png
+            size = 55, 57
+            position = 22, 13
+        }
+    }
+
+    container container4
+    {
+        size = 100, 100
+        position = 400, 15
+        image bg4
+        {
+            path = res/hdpi-png/rectangle_1.png
+            size = 100, 100
+            position = 0, 0
+        }
+        image image4
+        {
+            path = res/hdpi-png/location.png
+            size = 41, 60
+            position = 29, 10
+        }
+    }
+
+    container text1
+    {
+        size = 550, 20
+        position = 25, 90
+
+        label label1
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 0, 0
+            size = 100, 20
+            text = AR통화
+        }
+
+        label label2
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 125, 0
+            size = 100, 20
+            text = 자료보기
+        }
+
+        label label3
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 250, 0
+            size = 100, 20
+            text = 설비작업
+        }
+
+        label label4
+        {
+            font = ${font}
+            fontSize = ${fontSize}
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 375, 0
+            size = 100, 20
+            text = 메모
+        }
+    }
+
+    container badge_container
+    {
+        size = 30, 30
+        position = 360, 0
+        image badge_back
+        {
+            path = res/png/circle_red.png
+            size = 100%, 100%
+            position = 0, 0
+        }
+        label badge_label
+        {
+            font = ${font}
+            fontSize = 16
+            textColor = ${textColor}
+            textAlignment = ${textAlignment}
+            position = 0, 0
+            size = 100%, 100%
+            text = 0
+        }
+    }
+}
